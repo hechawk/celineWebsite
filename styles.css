@@ -16,24 +16,24 @@
 body {
     font-family: 'Montserrat';
     overflow-x: hidden;
-    margin: 0;
     color: rgb(23, 110, 128);
-    background-image: url("media/background1.png");
     background-size: cover;
+    margin: 0;
 }
 
 #menu {
     font-size: 32px;
-    padding-left: 50vw;
-    padding-right: 10vw;
-    padding-top: 1vh;
+    padding-top: 2vh;
     padding-bottom: 1vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.3);
+    position: fixed;
+    width: 100%;
 }
 
 #content {
+    margin-top: 6vh;
     margin-left: 10vw;
     margin-right: 10vw;
 }
@@ -53,6 +53,7 @@ body {
 }
 
 #flex-content {
+    margin-top: 6vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -150,4 +151,9 @@ footer {
 
 .centered {
     text-align: center;
+}
+
+#menu-logo img {
+    max-height: 4vh;
+    width: auto;
 }
