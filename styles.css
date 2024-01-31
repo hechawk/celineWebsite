@@ -22,14 +22,25 @@ body {
 }
 
 #menu {
-    font-size: 32px;
+    font-size: 1.4rem;
     padding-top: 2vh;
-    padding-bottom: 1vh;
+    padding-bottom: 2vh;
+    padding-left: 45vw;
     display: flex;
     justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.3);
     position: fixed;
-    width: 100%;
+    width: 55vw;
+}
+
+#menu-logo img {
+    max-height: 4vh;
+    width: auto;
+    position: fixed;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    padding-left: 2vw;
+    z-index: 1;
 }
 
 #content {
@@ -40,46 +51,51 @@ body {
 
 .title1 {
     font-family: 'Roca';
-    font-size: 56px;
+    font-size: 1.96rem;
 }
 
 .title2 {
+    font-size: 1.1rem;
     font-family: 'MontserratBold';
-    font-size: 36px;
 }
 
 .text {
-    font-size: 22px;
+    font-size: 1.1rem;
 }
 
-#flex-content {
-    margin-top: 6vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0px;
-    width: 100vw;
-    height: auto;
+.icon-title {
+    font-family: 'Roca';
+    font-size: 1.96rem;
 }
 
-.content-item {
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-#flex-content img {
-    width: auto;
+#content-img {
+    top: 48%;
+    transform: translate(0, -50%);
+    position: fixed;
     max-height: 80vh;
+    max-width: 50vw;
+    padding-left: 5vw;
+    padding-top: 10vh;
+}
+
+#index-text {
+    position: fixed;
+    right: 0;
+    top: 61%;
+    width: 50vw;
+    transform: translate(0, -50%);
 }
 
 #main-title {
     font-family: 'Roca';
-    font-size: 128px;
+    font-size: 6rem;
     color: #675e57;
+    line-height: 6rem;
 }
 
 #subtitle {
-    font-size: 42px;
+    padding-top: 1rem;
+    font-size: 3rem;
     color: #675e57;
 }
 
@@ -91,7 +107,7 @@ body {
     border-width: 3px;
     font-size: 24px;
     padding: 20px;
-    width: 31%;
+    display: inline-block;
 }
 
 a {
@@ -116,11 +132,13 @@ footer {
     align-items: baseline;
     text-align: center;
     font-family: 'Roca';
+    gap: 5vw;
 }
 
 .icon {
-    max-width: 10vw;
-    height: auto;
+    font-family: 'Roca';
+    max-width: auto;
+    max-height: 15vh;
 }
 
 .split-text {
@@ -136,6 +154,10 @@ footer {
 .filled-border {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 36px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 
 .logo-container {
@@ -153,7 +175,43 @@ footer {
     text-align: center;
 }
 
-#menu-logo img {
-    max-height: 4vh;
-    width: auto;
+
+
+#qatext0 {display: none;}
+#qatext1 {display: none;}
+#qatext2 {display: none;}
+#qatext3 {display: none;}
+#qatext4 {display: none;}
+#qatext5 {display: none;}
+#qatext6 {display: none;}
+
+#qatitle0:hover {cursor: pointer;}
+#qatitle1:hover {cursor: pointer;}
+#qatitle2:hover {cursor: pointer;}
+#qatitle3:hover {cursor: pointer;}
+#qatitle4:hover {cursor: pointer;}
+#qatitle5:hover {cursor: pointer;}
+#qatitle6:hover {cursor: pointer;}
+
+
+.title2 {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.flex-content {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    margin-top: 25vh;
+}
+
+.raum {
+    background-color: darkcyan;
+    border-radius: 50%;
+    padding: 200px;
 }

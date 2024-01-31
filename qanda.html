@@ -14,12 +14,12 @@
 </head>
 <body>
     <div id="background"></div>
+    <div id="menu-logo">
+        <a href="index.html">
+            <img src="media/logo.png">
+        </a>
+    </div>
     <div id="menu">
-        <div id="menu-logo">
-            <a href="index.html">
-                <img src="media/smallLogo.png">
-            </a>
-        </div>
         <div id="angebot">
             <a href="angebot.html">Angebot</a>
         </div>
@@ -32,6 +32,9 @@
         <div id="location">
             <a href="location.html">Location</a>
         </div>
+        <div id="contact">
+            <a href="kontakt.html">Kontakt</a>
+        </div>
     </div>
     <br><br>
     <div id="content">
@@ -39,11 +42,11 @@
             Question & Answer
         </p>
         <br>
-        <p class="title2">
-            - Lieber Einzel- oder Gruppensession?
+        <p class="title2" onclick="showText(0)" id="qatitle0">
+            + Lieber Einzel- oder Gruppensession?
         </p>
-        <br>
-        <p class="text">
+        
+        <p class="text" id="qatext0">
             Das entscheidest du! In den Einzelsessions wird es mehr Zeit geben, um auf deine persönlichen
 Wünsche und Bedürfnisse einzugehen, hier jedoch fehlt der wertvolle Punkt des Austauschs
 und Gemeinschaftsgefühl der Gruppe. Es kommt ganz darauf an, wie du dich grundsätzlich in
@@ -57,29 +60,29 @@ Dann vereinbaren wir einen Telefontermin und können gemeinsam herausfinden was 
 passt.
         </p>
         <br>
-        <p class="title2">
-            -Ist das Entspannungstraining eine medizinische Behandlung?
+        <p class="title2" onclick="showText(1)" id="qatitle1">
+            + Ist das Entspannungstraining eine medizinische Behandlung?
         </p>
-        <br>
-        <p class="text">
+        
+        <p class="text" id="qatext1">
             Nein. Hierbei handelt es sich ausschließlich um das Erlernen von Entspannungstechniken (und
             den Austausch von Betroffenen im Gruppenkurs). Das Entspannungstraining ersetzt keine
             ärztliche Behandlung!
         </p>
         <br>
-        <p class="title2">
-            - Werden die Kosten von der Krankenkasse übernommen?
+        <p class="title2" onclick="showText(2)" id="qatitle2">
+            + Werden die Kosten von der Krankenkasse übernommen?
         </p>
-        <br>
-        <p class="text">
+        
+        <p class="text" id="qatext2">
             Leider nein.
         </p>
         <br>
-        <p class="title2">
-            -Was ist Progressive Muskelentspannung/-relaxion (PMR)?
+        <p class="title2" onclick="showText(3)" id="qatitle3">
+            + Was ist Progressive Muskelentspannung/-relaxion (PMR)?
         </p>
-        <br>
-        <p class="text">
+        
+        <p class="text" id="qatext3">
             Progressive Muskelrelaxion bedeutet Kontrolle über seine Muskeln zu erlernen und sie somit
             gezielt entspannen zu können.
             Edmund Jacobson hat die Progressive Muskelrelaxion konzipiert, weil er herausgefunden hat,
@@ -99,11 +102,11 @@ passt.
             tägliche Übungszeiten einplanst
         </p>
         <br>
-        <p class="title2">
-            -Kann ich auch ohne Endometriose an einem Gruppenkurs teilnehmen?
+        <p class="title2" onclick="showText(4)" id="qatitle4">
+            + Kann ich auch ohne Endometriose an einem Gruppenkurs teilnehmen?
         </p>
-        <br>
-        <p class="text">
+        
+        <p class="text" id="qatext4">
             An den Endometriose-Gruppensessions dürfen nur Frauen teilnehmen, die Endometriose
 haben. Die Kurse sind thematisch auch nur für Betroffene relevant.
 Falls du Interesse an Entspannungstraining hast, kannst du ein reguläres Entspannungstraining
@@ -112,21 +115,21 @@ Gruppe anmeldest (z.B. deinen Freunden, deiner Familie oder ArbeitskollegInnen).
 hierzu gerne eine E-Mail.
         </p>
         <br>
-        <p class="title2">
-            -Was ist wenn ich mal krank bin?
+        <p class="title2" onclick="showText(5)" id="qatitle5">
+            + Was ist wenn ich mal krank bin?
         </p>
-        <br>
-        <p class="text">
+        
+        <p class="text" id="qatext5">
             Wenn du das Entspannungstraining als Einzelsession gebucht hast und plötzlich krank wirst,
-können wir vereinzelt auch Termine verschieben.
-Bei den Gruppensessions ist das leider nicht möglich, da es mehrere TeilnehmerInnen gibt.
+            können wir vereinzelt auch Termine verschieben.
+            Bei den Gruppensessions ist das leider nicht möglich, da es mehrere TeilnehmerInnen gibt.
         </p>
         <br>
-        <p class="title2">
-            -Was ist wenn ich mal krank bin?
+        <p class="title2" onclick="showText(6)" id="qatitle6">
+            + Was ist, wenn ich mich umentscheide?
         </p>
-        <br>
-        <p class="text">
+        
+        <p class="text" id="qatext6">
             Es ist wichtig, dass wir uns gut verstehen und ein gutes Gefühl miteinander haben. Das ist für das
             Entspannungstraining sehr wichtig, denn wir werden viel Zeit miteinander verbringen.
             Solltest du nach der ersten Session merken, dass das Ganze nichts für dich ist, hast du die
@@ -141,5 +144,6 @@ Bei den Gruppensessions ist das leider nicht möglich, da es mehrere TeilnehmerI
         <i class="fa fa-instagram" style="font-size:24px"></i>
         <i class="fa fa-facebook" style="font-size:24px"></i>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
